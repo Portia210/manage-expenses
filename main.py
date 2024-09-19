@@ -2,6 +2,7 @@ import pandas as pd
 import os
 from datetime import datetime
 import re
+from combine_dfs import combine_dfs_with_separation
 
 
 def round_numbers(x):
@@ -23,8 +24,15 @@ def clean_text(text):
 
 def add_total_row(dataframe, sum_column):
     total = round_numbers(dataframe[sum_column].sum())
-    total_data = {column: ['סך הכל' if column == dataframe.columns[0] else total if column == sum_column else ''] for
-                  column in dataframe.columns}
+    total_transactions = dataframe['מספר טרנזקציות'].sum() if 'מספר טרנזקציות' in dataframe.columns else ''
+
+    total_data = {
+        column: ['סך הכל' if column == dataframe.columns[0] else
+                 total if column == sum_column else
+                 total_transactions if column == 'מספר טרנזקציות' else
+                 '']
+        for column in dataframe.columns
+    }
 
     total_row = pd.DataFrame(
         data=total_data,
@@ -35,28 +43,84 @@ def add_total_row(dataframe, sum_column):
 
     # Ensure the total_row has the same dtypes as the original DataFrame
     for column in dataframe.columns:
-        total_row[column] = total_row[column].astype(dataframe[column].dtype)
+        if column in ['מספר טרנזקציות', sum_column]:
+            total_row[column] = total_row[column].astype(dataframe[column].dtype)
+        else:
+            total_row[column] = total_row[column].astype(str)
 
     return pd.concat([dataframe, total_row], ignore_index=True)
+
+# def earning_expenses(initial_data):
+#     earnings_data = initial_data[initial_data['זכות'].notna()].copy()
+#     expenses_data = initial_data[initial_data['חובה'].notna()].copy()
+#
+#     # Group earnings by 'הפעולה'
+#     earnings_grouped = earnings_data.groupby('הפעולה').agg({
+#         'זכות': 'sum',
+#         # 'תאריך': 'first',
+#         'פרטים': lambda x: ', '.join(filter(None, set(clean_text(i) for i in x)))
+#     }).reset_index()
+#
+#     # Group expenses by 'הפעולה'
+#     expenses_grouped = expenses_data.groupby('הפעולה').agg({
+#         'חובה': 'sum',
+#         # 'תאריך': 'first',
+#         'פרטים': lambda x: ', '.join(filter(None, set(clean_text(i) for i in x)))
+#     }).reset_index()
+#
+#     # Add sum rows
+#     earnings_grouped = add_total_row(earnings_grouped, 'זכות')
+#     expenses_grouped = add_total_row(expenses_grouped, 'חובה')
+#
+#     # Round numbers and clean text
+#     for data in [earnings_grouped, expenses_grouped]:
+#         for col in data.columns:
+#             if data[col].dtype in ['float64', 'int64']:
+#                 data[col] = data[col].apply(round_numbers)
+#             elif data[col].dtype == 'object':
+#                 data[col] = data[col].apply(clean_text)
+#
+#     return earnings_grouped, expenses_grouped
 
 
 def earning_expenses(initial_data):
     earnings_data = initial_data[initial_data['זכות'].notna()].copy()
     expenses_data = initial_data[initial_data['חובה'].notna()].copy()
 
-    # Group earnings by 'הפעולה'
-    earnings_grouped = earnings_data.groupby('הפעולה').agg({
-        'זכות': 'sum',
-        # 'תאריך': 'first',
-        'פרטים': lambda x: ', '.join(filter(None, set(clean_text(i) for i in x)))
-    }).reset_index()
+    # Function to format date range
+    def format_date_range(dates):
+        if len(dates) == 1:
+            return dates.iloc[0].strftime('%d/%m/%y')
+        else:
+            return f"{dates.min().strftime('%d/%m/%y')} - {dates.max().strftime('%d/%m/%y')}"
 
-    # Group expenses by 'הפעולה'
-    expenses_grouped = expenses_data.groupby('הפעולה').agg({
-        'חובה': 'sum',
-        # 'תאריך': 'first',
-        'פרטים': lambda x: ', '.join(filter(None, set(clean_text(i) for i in x)))
-    }).reset_index()
+    # Function to group by 'הפעולה' and 'פרטים'
+    def group_by_operation_and_details(data, amount_col):
+        # Fill empty 'פרטים' with a placeholder
+        data['פרטים'] = data['פרטים'].fillna('(ללא פרטים)')
+
+        grouped = data.groupby(['הפעולה', 'פרטים']).agg({
+            'תאריך': format_date_range,
+            amount_col: ['sum', 'count']  # Sum the amounts and count the transactions
+        }).reset_index()
+
+        # Flatten the column names
+        grouped.columns = ['הפעולה', 'פרטים', 'תאריך', amount_col, 'מספר טרנזקציות']
+
+        # Ensure 'מספר טרנזקציות' is of type int
+        grouped['מספר טרנזקציות'] = grouped['מספר טרנזקציות'].astype(int)
+
+        # Reorder columns
+        column_order = ['הפעולה', 'פרטים',  'תאריך', 'מספר טרנזקציות',amount_col]
+        grouped = grouped[column_order]
+
+        return grouped
+
+    # Group earnings
+    earnings_grouped = group_by_operation_and_details(earnings_data, 'זכות')
+
+    # Group expenses
+    expenses_grouped = group_by_operation_and_details(expenses_data, 'חובה')
 
     # Add sum rows
     earnings_grouped = add_total_row(earnings_grouped, 'זכות')
@@ -67,8 +131,8 @@ def earning_expenses(initial_data):
         for col in data.columns:
             if data[col].dtype in ['float64', 'int64']:
                 data[col] = data[col].apply(round_numbers)
-            elif data[col].dtype == 'object':
-                data[col] = data[col].apply(clean_text)
+            elif col == 'פרטים':
+                data[col] = data[col].apply(lambda x: clean_text(x) if x != '(ללא פרטים)' else x)
 
     return earnings_grouped, expenses_grouped
 
@@ -123,10 +187,13 @@ os.makedirs(output_folder, exist_ok=True)
 # Calculate for all dates
 all_earnings, all_expenses = earning_expenses(data_cleaned)
 date_range = f"{start_date.strftime('%d-%m-%Y')}_to_{end_date.strftime('%d-%m-%Y')}"
-all_earnings.to_csv(os.path.join(output_folder, f'earnings_{date_range}.csv'), index=False,
+earning_and_expenses = combine_dfs_with_separation([all_earnings, all_expenses], 2)
+earning_and_expenses.to_csv(os.path.join(output_folder, f'{date_range}.csv'), index=False,
                     encoding='utf-8-sig')
-all_expenses.to_csv(os.path.join(output_folder, f'expenses_{date_range}.csv'), index=False,
-                    encoding='utf-8-sig')
+# all_earnings.to_csv(os.path.join(output_folder, f'earnings_{date_range}.csv'), index=False,
+#                     encoding='utf-8-sig')
+# all_expenses.to_csv(os.path.join(output_folder, f'expenses_{date_range}.csv'), index=False,
+#                     encoding='utf-8-sig')
 # Calculate for each year
 for year in range(data_cleaned['תאריך'].dt.year.min(), data_cleaned['תאריך'].dt.year.max() + 1):
     year_data = data_cleaned[(data_cleaned['תאריך'].dt.year == year)]
@@ -134,6 +201,9 @@ for year in range(data_cleaned['תאריך'].dt.year.min(), data_cleaned['תאר
         year_earnings, year_expenses = earning_expenses(year_data)
         year_folder = os.path.join(output_folder, str(year))
         os.makedirs(year_folder, exist_ok=True)
+        year_earning_and_expenses = combine_dfs_with_separation([year_earnings, year_expenses], 2)
+        year_earning_and_expenses.to_csv(os.path.join(year_folder, f'{year}.csv'), index=False,
+                                    encoding='utf-8-sig')
         year_earnings.to_csv(os.path.join(year_folder, f'earnings_{year}.csv'), index=False,
                              encoding='utf-8-sig')
         year_expenses.to_csv(os.path.join(year_folder, f'expenses_{year}.csv'), index=False,
