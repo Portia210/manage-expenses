@@ -16,4 +16,4 @@ venv/
 # Logs
 *.log
 
-all_reports
+all_reports/
