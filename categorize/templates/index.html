@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Categorizer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .confidence-cell {
+            color: green;
+            font-weight: bold;
+        }
+        .fixed-bottom-left {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h1>Transaction Categorizer</h1>
+        <table class="table table-striped table-hover" id="transaction-table">
+            <thead>
+                <tr>
+                    <th>Business Name</th>
+                    <th>Category</th>
+                    <th>Conviction</th>
+                    <th>Confirmed</th>
+                    <th>See More</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button class="btn btn-primary btn-lg fixed-bottom-left" id="update-button">Update</button>
+    </div>
+
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Transaction Details</h2>
+            <table class="table" id="detailsTable">
+                <thead>
+                    <tr>
+                        <th>תאריך עסקה</th>
+                        <th>שם בית עסק</th>
+                        <th>סכום בש"ח</th>
+                        <th>מועד חיוב</th>
+                        <th>סוג עסקה</th>
+                        <th>מזהה כרטיס בארנק דיגילטי</th>
+                        <th>הנחה</th>
+                        <th>הערות</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        var EXPENSE_CATEGORIES = {{ categories|tojson }};
+    </script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

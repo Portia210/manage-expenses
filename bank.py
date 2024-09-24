@@ -2,7 +2,10 @@ import pandas as pd
 import os
 from datetime import datetime
 import re
-from combine_dfs import combine_dfs_with_separation
+from typing import Dict
+
+
+# from combine_dfs import combine_dfs_with_separation
 
 
 def round_numbers(x):
@@ -50,40 +53,8 @@ def add_total_row(dataframe, sum_column):
 
     return pd.concat([dataframe, total_row], ignore_index=True)
 
-# def earning_expenses(initial_data):
-#     earnings_data = initial_data[initial_data['זכות'].notna()].copy()
-#     expenses_data = initial_data[initial_data['חובה'].notna()].copy()
-#
-#     # Group earnings by 'הפעולה'
-#     earnings_grouped = earnings_data.groupby('הפעולה').agg({
-#         'זכות': 'sum',
-#         # 'תאריך': 'first',
-#         'פרטים': lambda x: ', '.join(filter(None, set(clean_text(i) for i in x)))
-#     }).reset_index()
-#
-#     # Group expenses by 'הפעולה'
-#     expenses_grouped = expenses_data.groupby('הפעולה').agg({
-#         'חובה': 'sum',
-#         # 'תאריך': 'first',
-#         'פרטים': lambda x: ', '.join(filter(None, set(clean_text(i) for i in x)))
-#     }).reset_index()
-#
-#     # Add sum rows
-#     earnings_grouped = add_total_row(earnings_grouped, 'זכות')
-#     expenses_grouped = add_total_row(expenses_grouped, 'חובה')
-#
-#     # Round numbers and clean text
-#     for data in [earnings_grouped, expenses_grouped]:
-#         for col in data.columns:
-#             if data[col].dtype in ['float64', 'int64']:
-#                 data[col] = data[col].apply(round_numbers)
-#             elif data[col].dtype == 'object':
-#                 data[col] = data[col].apply(clean_text)
-#
-#     return earnings_grouped, expenses_grouped
 
-
-def earning_expenses(initial_data):
+def earning_expenses(initial_data) -> Dict[str, pd.DataFrame]:
     earnings_data = initial_data[initial_data['זכות'].notna()].copy()
     expenses_data = initial_data[initial_data['חובה'].notna()].copy()
 
@@ -94,47 +65,58 @@ def earning_expenses(initial_data):
         else:
             return f"{dates.min().strftime('%d/%m/%y')} - {dates.max().strftime('%d/%m/%y')}"
 
-    # Function to group by 'הפעולה' and 'פרטים'
+    # Function to group by 'הפעולה' and 'פרטים' (long version)
     def group_by_operation_and_details(data, amount_col):
-        # Fill empty 'פרטים' with a placeholder
         data['פרטים'] = data['פרטים'].fillna('(ללא פרטים)')
 
         grouped = data.groupby(['הפעולה', 'פרטים']).agg({
             'תאריך': format_date_range,
-            amount_col: ['sum', 'count']  # Sum the amounts and count the transactions
+            amount_col: ['sum', 'count']
         }).reset_index()
 
-        # Flatten the column names
         grouped.columns = ['הפעולה', 'פרטים', 'תאריך', amount_col, 'מספר טרנזקציות']
-
-        # Ensure 'מספר טרנזקציות' is of type int
         grouped['מספר טרנזקציות'] = grouped['מספר טרנזקציות'].astype(int)
 
-        # Reorder columns
-        column_order = ['הפעולה', 'פרטים',  'תאריך', 'מספר טרנזקציות',amount_col]
-        grouped = grouped[column_order]
+        column_order = ['הפעולה', 'פרטים', 'תאריך', 'מספר טרנזקציות', amount_col]
+        return grouped[column_order]
+
+    # Function to group by 'הפעולה' only (short version)
+    def group_by_operation(data, amount_col):
+        grouped = data.groupby('הפעולה').agg({
+            amount_col: 'sum',
+            'פרטים': lambda x: ', '.join(filter(None, set(clean_text(i) for i in x)))
+        }).reset_index()
 
         return grouped
 
-    # Group earnings
-    earnings_grouped = group_by_operation_and_details(earnings_data, 'זכות')
+    # Group earnings (long version)
+    l_earnings_grouped = group_by_operation_and_details(earnings_data, 'זכות')
 
-    # Group expenses
-    expenses_grouped = group_by_operation_and_details(expenses_data, 'חובה')
+    # Group expenses (long version)
+    l_expenses_grouped = group_by_operation_and_details(expenses_data, 'חובה')
+
+    # Group earnings (short version)
+    s_earnings_grouped = group_by_operation(earnings_data, 'זכות')
+
+    # Group expenses (short version)
+    s_expenses_grouped = group_by_operation(expenses_data, 'חובה')
 
     # Add sum rows
-    earnings_grouped = add_total_row(earnings_grouped, 'זכות')
-    expenses_grouped = add_total_row(expenses_grouped, 'חובה')
+    for df in [l_earnings_grouped, l_expenses_grouped, s_earnings_grouped, s_expenses_grouped]:
+        df = add_total_row(df, 'זכות' if 'זכות' in df.columns else 'חובה')
 
     # Round numbers and clean text
-    for data in [earnings_grouped, expenses_grouped]:
+    for data in [l_earnings_grouped, l_expenses_grouped, s_earnings_grouped, s_expenses_grouped]:
         for col in data.columns:
             if data[col].dtype in ['float64', 'int64']:
                 data[col] = data[col].apply(round_numbers)
             elif col == 'פרטים':
                 data[col] = data[col].apply(lambda x: clean_text(x) if x != '(ללא פרטים)' else x)
 
-    return earnings_grouped, expenses_grouped
+    return {"s_earnings": s_earnings_grouped,
+            "s_expenses": s_expenses_grouped,
+            "l_earnings": l_earnings_grouped,
+            "l_expenses": l_expenses_grouped}
 
 
 def get_date_input(prompt):
@@ -179,50 +161,45 @@ if not end_date:
 # Filter the dataframe based on user input or data range
 data_cleaned = data_cleaned[(data_cleaned['תאריך'].dt.date >= start_date) & (data_cleaned['תאריך'].dt.date <= end_date)]
 
-
 # Create a folder to store the output files
 output_folder = 'all_reports'
 os.makedirs(output_folder, exist_ok=True)
 
 # Calculate for all dates
-all_earnings, all_expenses = earning_expenses(data_cleaned)
+all_dates_dfs = earning_expenses(data_cleaned)
 date_range = f"{start_date.strftime('%d-%m-%Y')}_to_{end_date.strftime('%d-%m-%Y')}"
-earning_and_expenses = combine_dfs_with_separation([all_earnings, all_expenses], 2)
-earning_and_expenses.to_csv(os.path.join(output_folder, f'{date_range}.csv'), index=False,
-                    encoding='utf-8-sig')
-# all_earnings.to_csv(os.path.join(output_folder, f'earnings_{date_range}.csv'), index=False,
-#                     encoding='utf-8-sig')
-# all_expenses.to_csv(os.path.join(output_folder, f'expenses_{date_range}.csv'), index=False,
-#                     encoding='utf-8-sig')
+
+all_dates_dfs["l_earnings"].to_csv(os.path.join(output_folder, f'earnings_{date_range}.csv'), index=False,
+                                   encoding='utf-8-sig')
+all_dates_dfs["l_expenses"].to_csv(os.path.join(output_folder, f'expenses_{date_range}.csv'), index=False,
+                                   encoding='utf-8-sig')
+
 # Calculate for each year
 for year in range(data_cleaned['תאריך'].dt.year.min(), data_cleaned['תאריך'].dt.year.max() + 1):
     year_data = data_cleaned[(data_cleaned['תאריך'].dt.year == year)]
     if not year_data.empty:
-        year_earnings, year_expenses = earning_expenses(year_data)
+        year_dfs = earning_expenses(year_data)
         year_folder = os.path.join(output_folder, str(year))
         os.makedirs(year_folder, exist_ok=True)
-        year_earning_and_expenses = combine_dfs_with_separation([year_earnings, year_expenses], 2)
-        year_earning_and_expenses.to_csv(os.path.join(year_folder, f'{year}.csv'), index=False,
-                                    encoding='utf-8-sig')
-        year_earnings.to_csv(os.path.join(year_folder, f'earnings_{year}.csv'), index=False,
-                             encoding='utf-8-sig')
-        year_expenses.to_csv(os.path.join(year_folder, f'expenses_{year}.csv'), index=False,
-                             encoding='utf-8-sig')
+        year_dfs["l_earnings"].to_csv(os.path.join(year_folder, f'earnings_{year}.csv'), index=False,
+                                      encoding='utf-8-sig')
+        year_dfs["l_expenses"].to_csv(os.path.join(year_folder, f'expenses_{year}.csv'), index=False,
+                                      encoding='utf-8-sig')
 
-# # Calculate for each month
-# grouped = data_cleaned.groupby(data_cleaned['תאריך'].dt.to_period('M'))
-#
-# for month, month_data in grouped:
-#     monthly_earnings_grouped, monthly_expenses_grouped = earning_expenses(month_data)
-#
-#     # Create a subfolder for each month
-#     month_folder = os.path.join(output_folder, month.strftime('%Y-%m'))
-#     os.makedirs(month_folder, exist_ok=True)
-#
-#     # Export the grouped DataFrames to CSV files
-#     monthly_earnings_grouped.to_csv(os.path.join(month_folder, f'earnings_{month}.csv'), index=False,
-#                                     encoding='utf-8-sig')
-#     monthly_expenses_grouped.to_csv(os.path.join(month_folder, f'expenses_{month}.csv'), index=False,
-#                                     encoding='utf-8-sig')
+# Calculate for each month
+grouped = data_cleaned.groupby(data_cleaned['תאריך'].dt.to_period('M'))
+
+for month, month_data in grouped:
+    monthly_dfs = earning_expenses(month_data)
+
+    # Create a subfolder for each month
+    month_folder = os.path.join(output_folder, month.strftime('%Y-%m'))
+    os.makedirs(month_folder, exist_ok=True)
+
+    # Export the grouped DataFrames to CSV files
+    monthly_dfs["l_earnings"].to_csv(os.path.join(month_folder, f'earnings_{month}.csv'), index=False,
+                                     encoding='utf-8-sig')
+    monthly_dfs["l_expenses"].to_csv(os.path.join(month_folder, f'expenses_{month}.csv'), index=False,
+                                     encoding='utf-8-sig')
 
 print("All files have been exported successfully.")
