@@ -2,7 +2,6 @@
 __pycache__/
 *.py[cod]
 
-combine_dfs.py
 # config
 *.ini
 
@@ -14,11 +13,7 @@ venv/
 # PyCharm project files
 .idea/
 
-# CSV files
-*.csv
-
-# json
-*.json
-
 # Logs
 *.log
+
+all_reports

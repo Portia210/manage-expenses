@@ -1,0 +1,1562 @@
+{
+  "SHELL ZACHARAKIS CHRIS": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "Shell is a global gas station brand, suggesting this is a fuel station owned by Chris Zacharakis.",
+    "confirm": false
+  },
+  "STATION SQ GARAGE": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "The word \"GARAGE\" strongly suggests this is a parking facility, which falls under Transportation.",
+    "confirm": false
+  },
+  "STICKY RICE": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This is almost certainly a restaurant, likely specializing in Asian cuisine.",
+    "confirm": false
+  },
+  "SUPER MARKET VERYKOK": {
+    "category": "Groceries",
+    "confidence": "95%",
+    "explanation": "The term \"Super Market\" clearly indicates this is a grocery store.",
+    "confirm": false
+  },
+  "SUPERMERCADO MUNTADES": {
+    "category": "Groceries",
+    "confidence": "95%",
+    "explanation": "\"SUPERMERCADO\" is Spanish for supermarket, clearly indicating a grocery store.",
+    "confirm": false
+  },
+  "SYRTAKI FOODSTORE 19": {
+    "category": "Groceries",
+    "confidence": "95%",
+    "explanation": "The term \"foodstore\" clearly indicates a grocery or food retail business.",
+    "confirm": false
+  },
+  "Sigma Rent a Car": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "\"Rent a Car\" clearly indicates a car rental service used for transportation.",
+    "confirm": false
+  },
+  "UBER *TRIP": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "This is clearly an Uber ride, which falls under transportation.",
+    "confirm": false
+  },
+  "WWW.ALIEXPRESS.COM": {
+    "category": "Shopping",
+    "confidence": "95%",
+    "explanation": "AliExpress is a well-known online retail service for a wide variety of products.",
+    "confirm": false
+  },
+  "WWW.HOSTELWORLD.COM": {
+    "category": "Travel",
+    "confidence": "95%",
+    "explanation": "This is clearly a website for booking hostels, which falls under travel accommodations.",
+    "confirm": false
+  },
+  "aliexpress": {
+    "category": "Shopping",
+    "confidence": "95%",
+    "explanation": "AliExpress is a well-known online retail platform offering a wide variety of products, making it clearly fit into the Shopping category.",
+    "confirm": false
+  },
+  "gotinder.com/help": {
+    "category": "Online Services",
+    "confidence": "95%",
+    "explanation": "This is clearly related to Tinder, a popular online dating service.",
+    "confirm": false
+  },
+  "\u05d0\u05e7\u05e1 \u05e9\u05d9\u05e8\u05d5\u05ea\u05d9 \u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8": {
+    "category": "Online Services",
+    "confidence": "95%",
+    "explanation": "This Hebrew name translates to \"X Internet Services,\" clearly indicating an internet service provider or online services company.",
+    "confirm": false
+  },
+  "\u05d1\u05d5\u05d8\u05d9\u05e7 \u05d4\u05e4\u05dc\u05d0\u05e4\u05dc": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "\"Boutique HaFalafel\" translates to \"The Falafel Boutique,\" clearly a falafel restaurant.",
+    "confirm": false
+  },
+  "\u05d1\u05d5\u05e8\u05d2\u05e8 \u05d8\u05d0\u05e5 \u05e9\u05d5\u05d5\u05e8\u05de\u05d4": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "\"Burger Touch Shawarma\" indicates a restaurant serving burgers and shawarma.",
+    "confirm": false
+  },
+  "\u05d1\u05d9\u05ea \u05d4\u05e4\u05e0\u05e7\u05d9\u05d9\u05e7 TLV \u05e0\u05de\u05dc \u05ea\"\u05d0": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This translates to \"Pancake House TLV Tel Aviv Port,\" clearly a restaurant specializing in pancakes.",
+    "confirm": false
+  },
+  "\u05d3\u05dc\u05e7 \u05d2\u05dc \u05d4\u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u05d0\u05e9\u05d3\u05d5\u05d3-\u05e6\u05de\u05e8\u05ea": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "\"\u05d3\u05dc\u05e7\" means \"fuel\" in Hebrew, indicating a gas station.",
+    "confirm": false
+  },
+  "\u05d3\u05de\u05d9 \u05db\u05e8\u05d8\u05d9\u05e1 \u05d1\u05e0\u05e7 \u05d4\u05e4\u05d5\u05e2\u05dc\u05d9\u05dd \u05de\u05e1\u05d8\u05e8": {
+    "category": "Business Expenses",
+    "confidence": "95%",
+    "explanation": "This Hebrew phrase refers to Bank Hapoalim Mastercard fees, indicating a business-related banking expense.",
+    "confirm": false
+  },
+  "\u05d3\u05e0\u05d9\u05d0\u05dc \u05e4\u05e8\u05e7\u05d9\u05e0\u05d2": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "\"\u05e4\u05e8\u05e7\u05d9\u05e0\u05d2\" is a transliteration of \"parking\" in Hebrew, clearly indicating a parking service.",
+    "confirm": false
+  },
+  "\u05d4\u05e4\u05e0\u05d9\u05e7\u05e1 \u05d1\u05d9\u05d8\u05d5\u05d7": {
+    "category": "Insurance",
+    "confidence": "95%",
+    "explanation": "\"\u05d1\u05d9\u05d8\u05d5\u05d7\" means \"insurance\" in Hebrew, and \"\u05d4\u05e4\u05e0\u05d9\u05e7\u05e1\" is a known Israeli insurance company.",
+    "confirm": false
+  },
+  "\u05d4\u05e8\u05d0\u05dc \u05d1\u05d9\u05d8\u05d5\u05d7\u05d9 \u05d7\u05d5\"\u05dc": {
+    "category": "Insurance",
+    "confidence": "95%",
+    "explanation": "This translates to \"Harel Overseas Insurance,\" clearly an insurance service.",
+    "confirm": false
+  },
+  "\u05d6\u05d0\u05e8\u05d4 - \u05e7\u05e0\u05d9\u05d5\u05df \u05de\u05dc\u05d7\u05d4": {
+    "category": "Shopping",
+    "confidence": "95%",
+    "explanation": "This is Zara, a well-known clothing retailer, located in Malha Mall in Jerusalem.",
+    "confirm": false
+  },
+  "\u05d7\u05d5\u05de\u05d5\u05e1 \u05d0\u05dc\u05d9\u05d4\u05d5": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This is Hebrew for \"Hummus Eliyahu,\" likely a restaurant specializing in hummus.",
+    "confirm": false
+  },
+  "\u05d7\u05d5\u05de\u05d5\u05e1 \u05d0\u05dc\u05d9\u05d4\u05d5 \u05d0\u05d9\u05dc\u05ea": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This translates to \"Hummus Eliyahu Eilat,\" likely a hummus restaurant in Eilat, Israel.",
+    "confirm": false
+  },
+  "\u05d7\u05d5\u05de\u05d5\u05e1 \u05d0\u05dc\u05d9\u05d4\u05d5 \u05de\u05d7\u05e0\u05d4 \u05d9\u05d4\u05d5\u05d3\u05d4": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This translates to \"Eliyahu's Hummus in Mahane Yehuda,\" likely a hummus restaurant in Jerusalem's famous market.",
+    "confirm": false
+  },
+  "\u05d7\u05d5\u05de\u05d5\u05e1 \u05d0\u05dc\u05d9\u05d4\u05d5 \u05e1\u05e0\u05d8\u05e8 1": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This is Hebrew for \"Hummus Eliyahu Center 1,\" likely a restaurant specializing in hummus.",
+    "confirm": false
+  },
+  "\u05d7\u05e0\u05d9\u05d5\u05df \u05d7\u05e6\u05e8\u05d5\u05ea \u05d9\u05e4\u05d5": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "This translates to \"Jaffa Courtyards Parking Lot,\" clearly a transportation-related service.",
+    "confirm": false
+  },
+  "\u05d7\u05e0\u05d9\u05d5\u05df \u05e2\u05dc \u05d1\u05e1\u05e0\u05d8\u05e8 \u05d1\u05e2\"\u05de": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "\"\u05d7\u05e0\u05d9\u05d5\u05df\" means \"parking lot\" in Hebrew, clearly indicating a parking service.",
+    "confirm": false
+  },
+  "\u05d7\u05e0\u05d9\u05d5\u05df \u05e7\u05e0\u05d9\u05d5\u05df \u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "This Hebrew phrase translates to \"Azrieli Jerusalem Mall Parking Lot,\" clearly indicating a parking service.",
+    "confirm": false
+  },
+  "\u05d7\u05e0\u05d9\u05d5\u05df \u05e9\u05e8\u05d5\u05e0\u05d4": {
+    "category": "Transportation",
+    "confidence": "95%",
+    "explanation": "This is Hebrew for \"Sharona Parking,\" indicating a parking facility.",
+    "confirm": false
+  },
+  "\u05d7\u05e9\u05d1\u05d5\u05df \u05dc\u05e9\u05e8\u05d5\u05ea\u05d9 \u05e1\u05dc\u05e7\u05d5\u05dd": {
+    "category": "Utilities",
+    "confidence": "95%",
+    "explanation": "This translates to \"Cellcom Services Account\" in Hebrew, indicating a cellular service provider.",
+    "confirm": false
+  },
+  "\u05d9\u05e9\u05e8\u05d0\u05d9\u05d9\u05e8 \u05ea\u05e2\u05d5\u05e4\u05d4 \u05d1\u05e2\"\u05de-\u05e6\u05de\u05e8\u05ea": {
+    "category": "Travel",
+    "confidence": "95%",
+    "explanation": "Contains \"Israir,\" which is an Israeli airline, clearly indicating air travel.",
+    "confirm": false
+  },
+  "\u05de\u05d9\u05e7\u05d5 \u05e1\u05d8\u05e7\u05d9\u05d9\u05ea \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05d1\u05e2\u05de": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This is clearly a steakhouse in Jerusalem. \"\u05e1\u05d8\u05e7\u05d9\u05d9\u05ea\" translates to \"steakhouse\" in Hebrew.",
+    "confirm": false
+  },
+  "\u05de\u05e1\u05e2\u05d3\u05ea \u05d1\u05d0\u05d1\u05d9 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "\"Misadat Babi Yerushalayim\" translates to \"Babi Jerusalem Restaurant,\" clearly a dining establishment.",
+    "confirm": false
+  },
+  "\u05de\u05e1\u05e2\u05d3\u05ea \u05de\u05dc\u05d5\u05d3\u05d9": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This translates to \"Melody Restaurant,\" clearly a dining establishment.",
+    "confirm": false
+  },
+  "\u05e1\u05d5\u05e4\u05e8\u05de\u05e8\u05e7\u05d8 \u05d4\u05d2\u05e9\u05e8": {
+    "category": "Groceries",
+    "confidence": "95%",
+    "explanation": "This Hebrew text translates to \"The Bridge Supermarket,\" clearly indicating a grocery store.",
+    "confirm": false
+  },
+  "\u05e1\u05de\u05d5\u05e7 \u05d1\u05d5\u05e8\u05d2\u05e8": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This translates to \"Smoke Burger,\" clearly a restaurant or fast-food establishment.",
+    "confirm": false
+  },
+  "\u05e4\u05d9\u05e6\u05d4 \u05e8\u05d2'\u05d9\u05e0\u05d4": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This translates to \"Pizza Regina,\" clearly a restaurant or pizza place.",
+    "confirm": false
+  },
+  "\u05e4\u05dc\u05d0\u05e4\u05dc \u05e9\u05d5\u05d5\u05d0\u05e8\u05de\u05d4 \u05d4\u05db\u05e8\u05dd": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This translates to \"Falafel Shawarma Hakerem,\" clearly a food establishment.",
+    "confirm": false
+  },
+  "\u05e4\u05dc\u05d0\u05e4\u05dc \u05e9\u05d5\u05d5\u05d0\u05e8\u05de\u05d4 \u05d4\u05dc\u05d1 \u05d4\u05e8\u05d7\u05d1 \u05d1\u05e2\"\u05de": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This appears to be a falafel and shawarma restaurant, which is typically a dining out establishment.",
+    "confirm": false
+  },
+  "\u05e7\u05e8\u05d9\u05e1\u05e4\u05d9 \u05e6'\u05d9\u05e7\u05df \u05d0\u05d9\u05d9\u05e1 \u05de\u05d5\u05dc": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "This Hebrew name translates to \"Crispy Chicken Ice Mall,\" strongly suggesting a fast-food restaurant specializing in chicken, likely in a shopping mall.",
+    "confirm": false
+  },
+  "\u05e8\u05e0\u05d5\u05d0\u05e8 \u05d0\u05d5\u05e4\u05e0\u05d4 \u05e7\u05e0\u05d9\u05d5\u05df \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05e0\u05e9\u05d9\u05dd-\u05d2\u05de\u05d0": {
+    "category": "Shopping",
+    "confidence": "95%",
+    "explanation": "This is Renuar, a fashion retailer for women, located in a Jerusalem mall.",
+    "confirm": false
+  },
+  "\u05e9\u05d5\u05d5\u05d0\u05e8\u05de\u05d4 \u05e2\u05d5\u05de\u05e8": {
+    "category": "Dining Out",
+    "confidence": "95%",
+    "explanation": "\"Shawarma Omar\" is clearly a shawarma restaurant.",
+    "confirm": false
+  },
+  "AEGEAN AI0000000PBNVEJ": {
+    "category": "Travel",
+    "confidence": "90%",
+    "explanation": "\"AEGEAN\" likely refers to Aegean Airlines, a Greek airline.",
+    "confirm": false
+  },
+  "BODEGA GONGORA": {
+    "category": "Groceries",
+    "confidence": "90%",
+    "explanation": "\"Bodega\" typically refers to a small grocery store or wine shop, likely Spanish or Latin American in origin.",
+    "confirm": false
+  },
+  "BP": {
+    "category": "Transportation",
+    "confidence": "90%",
+    "explanation": "BP is a well-known gas station and oil company, primarily used for vehicle fueling.",
+    "confirm": false
+  },
+  "CARJET.COM": {
+    "category": "Transportation",
+    "confidence": "90%",
+    "explanation": "This appears to be a car rental service, typically used for transportation during travel.",
+    "confirm": false
+  },
+  "CRAZY FASHION": {
+    "category": "Shopping",
+    "confidence": "90%",
+    "explanation": "The name strongly suggests a clothing or accessories store.",
+    "confirm": false
+  },
+  "CloudwaysLTD": {
+    "category": "Online Services",
+    "confidence": "90%",
+    "explanation": "\"Cloudways\" implies a cloud-based service provider, likely for hosting or similar services.",
+    "confirm": false
+  },
+  "Eurail": {
+    "category": "Transportation",
+    "confidence": "90%",
+    "explanation": "Eurail is associated with train travel passes in Europe, primarily used for transportation across countries.",
+    "confirm": false
+  },
+  "GREEK FERRIES CLUB": {
+    "category": "Transportation",
+    "confidence": "90%",
+    "explanation": "This business is clearly related to ferry services in Greece, used for transportation between islands or coastal areas.",
+    "confirm": false
+  },
+  "HELLENIC TRAIN SA": {
+    "category": "Transportation",
+    "confidence": "90%",
+    "explanation": "\"TRAIN\" in the name suggests it's a railway company, likely providing transportation services in Greece.",
+    "confirm": false
+  },
+  "HOSTEL BARAJAS MADRID": {
+    "category": "Travel",
+    "confidence": "90%",
+    "explanation": "A hostel is a type of accommodation, often used by travelers. Barajas is Madrid's airport area, further indicating travel-related expenses.",
+    "confirm": false
+  },
+  "KAFENEION TO 111": {
+    "category": "Dining Out",
+    "confidence": "90%",
+    "explanation": "\"Kafeneion\" is Greek for \"caf\u00e9,\" indicating this is likely a coffee shop or small restaurant.",
+    "confirm": false
+  },
+  "LOUKOUMADES STORES": {
+    "category": "Dining Out",
+    "confidence": "90%",
+    "explanation": "Loukoumades are Greek desserts, indicating a specialty food store or restaurant.",
+    "confirm": false
+  },
+  "MARINOPOULOS COFFEE CO": {
+    "category": "Dining Out",
+    "confidence": "90%",
+    "explanation": "The inclusion of \"COFFEE CO\" clearly indicates a coffee shop or coffee-related business.",
+    "confirm": false
+  },
+  "PAYPAL *KHOAVUTECHN": {
+    "category": "Online Services",
+    "confidence": "90%",
+    "explanation": "The business name \"PAYPAL *KHOAVUTECHN\" suggests a payment made through PayPal, which is an online payment service. The \"*KHOAVUTECHN\" part likely represents the recipient's username or transaction reference. As PayPal is primarily used for online transactions, the most fitting category is Online Services.",
+    "confirm": false
+  },
+  "PAYPAL *PATREON MEMBE": {
+    "category": "Online Services",
+    "confidence": "90%",
+    "explanation": "This appears to be a Patreon membership payment made through PayPal, which is an online service.",
+    "confirm": false
+  },
+  "PAYPAL *SargisManukyan": {
+    "category": "Online Services",
+    "confidence": "90%",
+    "explanation": "PayPal is an online payment service. The name after it likely indicates a specific transaction or merchant.",
+    "confirm": false
+  },
+  "PAYPAL *martinrivera6": {
+    "category": "Online Services",
+    "confidence": "90%",
+    "explanation": "PayPal is an online payment service. This appears to be a transaction made through PayPal.",
+    "confirm": false
+  },
+  "SUPER.COM HOTELS": {
+    "category": "Travel",
+    "confidence": "90%",
+    "explanation": "\"HOTELS\" in the name strongly suggests it's a hotel booking service.",
+    "confirm": false
+  },
+  "SUPERMARKET \u05e7\u05e4\u05d4 \u05d5\u05de\u05d0\u05e4\u05d4": {
+    "category": "Groceries",
+    "confidence": "90%",
+    "explanation": "\"Supermarket\" in the name indicates a grocery store, while \"\u05e7\u05e4\u05d4 \u05d5\u05de\u05d0\u05e4\u05d4\" (coffee and pastry) suggests it might also have a cafe section.",
+    "confirm": false
+  },
+  "TAVERNA AKRON": {
+    "category": "Dining Out",
+    "confidence": "90%",
+    "explanation": "\"Taverna\" typically refers to a type of restaurant, clearly indicating a dining out expense.",
+    "confirm": false
+  },
+  "\u05e1\u05e0\u05d3\u05d5\u05d5\u05d9\u05e5' \u05e9\u05e8\u05d9 \u05d9\u05e9\u05e8\u05d0\u05dc \u05d1\u05e2\"\u05de": {
+    "category": "Dining Out",
+    "confidence": "90%",
+    "explanation": "\"Sandwich Shari Israel Ltd.\" indicates a sandwich shop or restaurant.",
+    "confirm": false
+  },
+  "\u05e4.\u05e9 \u05de\u05d9\u05d5 \u05e1\u05d5\u05e9\u05d9 \u05d1\u05e2\"\u05de": {
+    "category": "Dining Out",
+    "confidence": "90%",
+    "explanation": "This translates to \"P.S. Mio Sushi Ltd.,\" clearly indicating a sushi restaurant.",
+    "confirm": false
+  },
+  "\u05e6\u05d5\u05de\u05ea \u05e1\u05e4\u05e8\u05d9\u05dd \u05ea\u05d7\u05e0\u05d4 \u05de\u05e8\u05db\u05d6\u05d9\u05ea \u05d7\u05d3\u05e9\u05d4": {
+    "category": "Shopping",
+    "confidence": "90%",
+    "explanation": "\"\u05e6\u05d5\u05de\u05ea \u05e1\u05e4\u05e8\u05d9\u05dd\" means \"Book Junction\" in Hebrew, indicating a bookstore.",
+    "confirm": false
+  },
+  "\u05e8\u05d9\u05d1\u05d0\u05e8 \u05e8\u05d5\u05d9\u05d0\u05dc \u05d1\u05d9\u05e5": {
+    "category": "Travel",
+    "confidence": "90%",
+    "explanation": "\"Ribar Royal Beach\" strongly suggests a beach resort or hotel, fitting into the travel category.",
+    "confirm": false
+  },
+  "AMAZON MKTPL*ZT4YV1PR1": {
+    "category": "Shopping",
+    "confidence": "85%",
+    "explanation": "Amazon Marketplace is a well-known online shopping platform, indicating a general shopping purchase.",
+    "confirm": false
+  },
+  "BISTRO PAROCHES YPIR": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "\"Bistro\" in the name strongly suggests a restaurant or eating establishment.",
+    "confirm": false
+  },
+  "COCO MAT BIKE": {
+    "category": "Transportation",
+    "confidence": "85%",
+    "explanation": "This likely refers to a bike rental or sales service, possibly associated with the Coco-Mat brand.",
+    "confirm": false
+  },
+  "CONSUM BARNA SANTS": {
+    "category": "Groceries",
+    "confidence": "85%",
+    "explanation": "\"Consum\" is a supermarket chain in Spain, and \"Barna Sants\" likely refers to a location in Barcelona.",
+    "confirm": false
+  },
+  "EL RACO ART DEL TEATRE": {
+    "category": "Entertainment",
+    "confidence": "85%",
+    "explanation": "The name suggests a theater or art venue, likely related to entertainment.",
+    "confirm": false
+  },
+  "EPIRUS RENTING": {
+    "category": "Transportation",
+    "confidence": "85%",
+    "explanation": "\"Renting\" suggests it's a car rental service, likely in the Epirus region of Greece.",
+    "confirm": false
+  },
+  "EXPRESS MARKET": {
+    "category": "Groceries",
+    "confidence": "85%",
+    "explanation": "The name suggests a small grocery or convenience store.",
+    "confirm": false
+  },
+  "Google Boo": {
+    "category": "Online Services",
+    "confidence": "85%",
+    "explanation": "While \"Boo\" is unclear, the Google brand suggests this is likely an online service.",
+    "confirm": false
+  },
+  "Google ImageLine": {
+    "category": "Online Services",
+    "confidence": "85%",
+    "explanation": "This appears to be a Google service, likely related to image processing or hosting.",
+    "confirm": false
+  },
+  "ISKENDER": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "Iskender is a famous Turkish dish, suggesting this is likely a Turkish restaurant.",
+    "confirm": false
+  },
+  "LA GULA ARGENTINA": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "The name suggests an Argentinian restaurant or food establishment.",
+    "confirm": false
+  },
+  "MONGODBCLOUD AGENTS...": {
+    "category": "Online Services",
+    "confidence": "85%",
+    "explanation": "MongoDB is a database service, suggesting this is likely a cloud computing or online service expense.",
+    "confirm": false
+  },
+  "MOUSEIO AKROPOLIS": {
+    "category": "Entertainment",
+    "confidence": "85%",
+    "explanation": "This translates to \"Acropolis Museum\" in Greek, which is a cultural attraction and entertainment venue.",
+    "confirm": false
+  },
+  "MR FOCACCIA": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "Focaccia is a type of bread, suggesting this is likely a bakery or sandwich shop.",
+    "confirm": false
+  },
+  "OASA ETICKET POS": {
+    "category": "Transportation",
+    "confidence": "85%",
+    "explanation": "OASA is likely referring to Athens' public transport organization, suggesting this is a ticket purchase for public transportation.",
+    "confirm": false
+  },
+  "PAYBOX": {
+    "category": "Online Services",
+    "confidence": "85%",
+    "explanation": "Paybox is likely a digital payment or money transfer service, similar to PayPal.",
+    "confirm": false
+  },
+  "PAYPAL *Product": {
+    "category": "Online Services",
+    "confidence": "85%",
+    "explanation": "PayPal is a digital payment platform, and the \"*Product\" suggests a purchase of some kind of online service or digital product.",
+    "confirm": false
+  },
+  "PAYPAL *SHANIJACOBI": {
+    "category": "Online Services",
+    "confidence": "85%",
+    "explanation": "PayPal is an online payment service, though the specific transaction purpose is unclear.",
+    "confirm": false
+  },
+  "RIO DE JANEIRO COF": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "\"COF\" likely stands for \"coffee,\" indicating a coffee shop, possibly with a Brazilian theme.",
+    "confirm": false
+  },
+  "SSP S.A. - AEROPUERTO": {
+    "category": "Travel",
+    "confidence": "85%",
+    "explanation": "The mention of \"Aeropuerto\" (airport) suggests this is an airport-related service, likely food or retail within an airport.",
+    "confirm": false
+  },
+  "SUPER BALMES 21": {
+    "category": "Groceries",
+    "confidence": "85%",
+    "explanation": "\"Super\" often indicates a supermarket or grocery store, with \"Balmes 21\" likely being the location.",
+    "confirm": false
+  },
+  "YPERASTIKO KTEL IOAN": {
+    "category": "Transportation",
+    "confidence": "85%",
+    "explanation": "KTEL is the Greek intercity bus service, indicating public transportation.",
+    "confirm": false
+  },
+  "mytrip_1015448618": {
+    "category": "Travel",
+    "confidence": "85%",
+    "explanation": "\"Mytrip\" suggests a travel booking service, likely for flights or accommodations.",
+    "confirm": false
+  },
+  "street.game": {
+    "category": "Entertainment",
+    "confidence": "85%",
+    "explanation": "The name implies a street game or outdoor entertainment activity.",
+    "confirm": false
+  },
+  "terminal 3": {
+    "category": "Travel",
+    "confidence": "85%",
+    "explanation": "\"Terminal 3\" typically refers to an airport terminal, indicating travel-related expenses.",
+    "confirm": false
+  },
+  "\u05d0\u05d1\u05d5\u05dc\u05e2\u05e4\u05d9\u05d4 \u05d0\u05e9\u05d3\u05d5\u05d3": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "Abulafia is a famous bakery chain in Israel, known for its baked goods and sandwiches. This is likely a branch in Ashdod.",
+    "confirm": false
+  },
+  "\u05d0\u05d1\u05e8\u05d4\u05dd \u05d4\u05d5\u05e1\u05d8\u05dc \u05d0\u05d9\u05dc\u05ea \u05d1\u05e2\"\u05de": {
+    "category": "Travel",
+    "confidence": "85%",
+    "explanation": "This appears to be a hostel in Eilat, Israel, which is accommodation typically used for travel purposes.",
+    "confirm": false
+  },
+  "\u05d2\u05e8\u05d5\u05d6\u05e8\u05e1": {
+    "category": "Groceries",
+    "confidence": "85%",
+    "explanation": "This appears to be a transliteration of \"Grocers,\" suggesting a grocery store.",
+    "confirm": false
+  },
+  "\u05d3\u05e8\u05da \u05d4\u05d7\u05d5\u05de\u05d5\u05e1": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "\"Hummus\" in the name suggests it's a restaurant or food establishment.",
+    "confirm": false
+  },
+  "\u05d4\u05de\u05e9\u05d1\u05d9\u05e8 \u05de\u05dc\u05d7\u05d4": {
+    "category": "Shopping",
+    "confidence": "85%",
+    "explanation": "\"HaMashbir\" is a known department store chain in Israel.",
+    "confirm": false
+  },
+  "\u05d4\u05de\u05ea\u05d7\u05dd \u05d4\u05ea\u05d0\u05d9\u05dc\u05e0\u05d3\u05d9": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "\"HaMitcham HaTailandi\" translates to \"The Thai Complex,\" likely a Thai restaurant or food court.",
+    "confirm": false
+  },
+  "\u05d4\u05e4\u05d9\u05e0\u05d4 \u05d4\u05de\u05ea\u05d5\u05e7\u05d4": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "This Hebrew name translates to \"The Sweet Corner,\" likely referring to a bakery or confectionery shop.",
+    "confirm": false
+  },
+  "\u05d5\u05d5\u05d3\u05d5 \u05d1\u05e8": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "\"\u05d1\u05e8\" means \"bar\" in Hebrew, indicating this is likely a drinking establishment.",
+    "confirm": false
+  },
+  "\u05d8\u05d9\u05e7\u05e6'\u05d0\u05e7 \u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05dd 6565*": {
+    "category": "Entertainment",
+    "confidence": "85%",
+    "explanation": "This translates to \"Tickchak Tickets,\" likely a ticket booking service for events or performances.",
+    "confirm": false
+  },
+  "\u05de\u05d7\u05e1\u05e0\u05d9 \u05d4\u05e9\u05d5\u05e7- \u05d9\u05d3 \u05d1\u05d9\u05e0\u05d9\u05de\u05d9\u05df": {
+    "category": "Groceries",
+    "confidence": "85%",
+    "explanation": "The business name \"\u05de\u05d7\u05e1\u05e0\u05d9 \u05d4\u05e9\u05d5\u05e7- \u05d9\u05d3 \u05d1\u05d9\u05e0\u05d9\u05de\u05d9\u05df\" is in Hebrew and translates to \"Market Warehouses - Yad Binyamin\". This suggests a large grocery store or supermarket, likely offering a wide range of food and household items. The term \"warehouses\" implies bulk quantities, which is typical for grocery stores. While I'm not entirely certain without more context, the name strongly indicates a grocery business, hence the high confidence level.",
+    "confirm": false
+  },
+  "\u05de\u05de\u05ea\u05e7\u05d9 \u05d4\u05e7\u05e8\u05d9\u05d4 \u05d1\u05e2\"\u05de": {
+    "category": "Shopping",
+    "confidence": "85%",
+    "explanation": "This Hebrew name translates to \"Sweets of the City,\" indicating it's likely a candy or confectionery shop.",
+    "confirm": false
+  },
+  "\u05e1\u05d0\u05df \u05d5\u05d5\u05d0\u05d9 \u05d1\u05d2\u05d3\u05d9 \u05d4\u05d2\u05e0\u05d4 \u05de\u05e9\u05de\u05e9": {
+    "category": "Shopping",
+    "confidence": "85%",
+    "explanation": "This translates to \"Sun Way Sun Protection Clothing,\" indicating a retail business selling specialized clothing.",
+    "confirm": false
+  },
+  "\u05e1\u05d5\u05e0\u05d5\u05dc": {
+    "category": "Transportation",
+    "confidence": "85%",
+    "explanation": "Sonol is an Israeli fuel company, likely related to gas/petrol purchases for vehicles.",
+    "confirm": false
+  },
+  "\u05e1\u05d5\u05e4\u05e8 \u05e4\u05d0\u05e8\u05dd \u05d2\u05d3\u05e8\u05d4 146": {
+    "category": "Personal Care",
+    "confidence": "85%",
+    "explanation": "Super-Pharm is a drugstore chain in Israel, selling personal care items and pharmaceuticals.",
+    "confirm": false
+  },
+  "\u05e2\u05d9\u05e8\u05d9\u05ea \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd \u05d2\u05d6\u05d1\u05e8\u05d5\u05ea": {
+    "category": "Taxes",
+    "confidence": "85%",
+    "explanation": "This translates to \"Jerusalem Municipality Treasury,\" suggesting it's related to local government taxes or fees.",
+    "confirm": false
+  },
+  "\u05e4\u05d0\u05d5\u05d5\u05e8 \u05e7\u05d5\u05e4\u05d9\u05d5\u05d5\u05e8\u05e7\u05e1": {
+    "category": "Business Expenses",
+    "confidence": "85%",
+    "explanation": "This Hebrew text translates to \"Power Copiworks,\" suggesting a copy center or printing service often used for business purposes.",
+    "confirm": false
+  },
+  "\u05e4\u05dc\u05d0\u05e4\u05dc \u05d4\u05e6\u05d5\u05de\u05ea": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "The Hebrew name includes \"falafel,\" a popular food item, suggesting this is a food establishment.",
+    "confirm": false
+  },
+  "\u05e4\u05e8\u05d9 \u05d5\u05e9\u05d9\u05d9\u05e7": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "This translates to \"Fruit and Shake,\" likely a smoothie or juice bar.",
+    "confirm": false
+  },
+  "\u05e7\u05e4\u05d9\u05ea \u05d1\u05d2\u05df": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "\"\u05e7\u05e4\u05d9\u05ea\" is related to \"caf\u00e9\" in Hebrew, suggesting a coffee shop or small eatery.",
+    "confirm": false
+  },
+  "\u05e9\u05e0\u05d9\u05e6\u05dc \u05e7\u05d5\u05e0\u05e1\u05e4\u05d8 \u05e2\u05d6\u05e8\u05d9\u05d0\u05dc\u05d9 \u05de\u05d5\u05dc \u05d4\u05d9\u05dd": {
+    "category": "Dining Out",
+    "confidence": "85%",
+    "explanation": "\"\u05e9\u05e0\u05d9\u05e6\u05dc\" (schnitzel) in the name suggests a restaurant specializing in this dish.",
+    "confirm": false
+  },
+  "\u05e9\u05e4\u05d9\u05e8 \u05d4\u05e0\u05d3\u05e1\u05d4 \u05d0\u05d6\u05e8\u05d7\u05d9\u05ea \u05d7\u05e0\u05d9\u05d5\u05df \u05d4\u05dc\u05d0\u05d5\u05dd": {
+    "category": "Transportation",
+    "confidence": "85%",
+    "explanation": "\"\u05d7\u05e0\u05d9\u05d5\u05df\" means \"parking lot\" in Hebrew, suggesting this is related to parking services.",
+    "confirm": false
+  },
+  "APEX TRADER FUNDING": {
+    "category": "Business Expenses",
+    "confidence": "80%",
+    "explanation": "APEX TRADER FUNDING sounds like a company that provides funding or financial services for traders or trading activities. This type of business would likely fall under the Business Expenses category, as it seems to be a service aimed at supporting or facilitating business operations related to trading. However, without more context about the specific services offered, I cannot be 100% certain of the categorization.",
+    "confirm": false
+  },
+  "APEXTRADERFUNDING": {
+    "category": "Business Expenses",
+    "confidence": "80%",
+    "explanation": "APEXTRADERFUNDING appears to be a company that provides funding for traders, likely for trading activities or related business expenses. As the service seems targeted towards traders and their business needs, it is most likely a business expense. However, without more context about the specific services offered, I cannot be completely certain.",
+    "confirm": false
+  },
+  "Astiko Ktel Kerkiras": {
+    "category": "Transportation",
+    "confidence": "80%",
+    "explanation": "\"Ktel\" is often associated with bus services in Greece, suggesting this is a transportation company.",
+    "confirm": false
+  },
+  "BAZAR SUNNY": {
+    "category": "Shopping",
+    "confidence": "80%",
+    "explanation": "\"Bazar\" suggests a market or store, likely selling various goods.",
+    "confirm": false
+  },
+  "BELUSHI S": {
+    "category": "Entertainment",
+    "confidence": "80%",
+    "explanation": "This is likely a bar or entertainment venue, possibly named after the Belushi brothers.",
+    "confirm": false
+  },
+  "BIT": {
+    "category": "Education",
+    "confidence": "80%",
+    "explanation": "BIT likely stands for an educational institution, such as Birla Institute of Technology or Beijing Institute of Technology. While there is a small chance it could refer to a business in another category, the acronym is most commonly associated with universities or colleges.",
+    "confirm": false
+  },
+  "Bright Data Ltd": {
+    "category": "Online Services",
+    "confidence": "80%",
+    "explanation": "Bright Data is likely an IT or data services company, fitting best under online services.",
+    "confirm": false
+  },
+  "ELEMENTOR": {
+    "category": "Online Services",
+    "confidence": "80%",
+    "explanation": "Elementor is a popular website building tool, which falls under online services for web development.",
+    "confirm": false
+  },
+  "EVROPAIKA ARTOPOIEIA": {
+    "category": "Dining Out",
+    "confidence": "80%",
+    "explanation": "\"Artopoieia\" is Greek for bakery, suggesting this is a European-style bakery or pastry shop.",
+    "confirm": false
+  },
+  "FOOD KALOGEROPOULOS": {
+    "category": "Groceries",
+    "confidence": "80%",
+    "explanation": "The word \"FOOD\" in the name suggests a food-related business, likely a grocery store or market.",
+    "confirm": false
+  },
+  "GETT": {
+    "category": "Transportation",
+    "confidence": "80%",
+    "explanation": "GETT appears to be a ride-hailing service similar to Uber or Lyft, based on the name. Ride-hailing services fall under the Transportation category. However, without more context about the specific business, there is a slight possibility it could be another type of service, so the confidence is not 100%.",
+    "confirm": false
+  },
+  "RAKETRADESLLC.COM": {
+    "category": "Business Expenses",
+    "confidence": "80%",
+    "explanation": "The \".com\" domain and \"LLC\" suggest it's a business-related service or platform.",
+    "confirm": false
+  },
+  "SUPER-PHARM": {
+    "category": "Shopping",
+    "confidence": "80%",
+    "explanation": "SUPER-PHARM is likely a pharmacy or drugstore chain, based on the name. Pharmacies primarily sell healthcare products, personal care items, and some household goods, which falls under the Shopping category. However, there is a slight chance it could be categorized as Healthcare if it provides significant health services beyond typical drugstore offerings, which is why the confidence is not 100%.",
+    "confirm": false
+  },
+  "iDive": {
+    "category": "Entertainment",
+    "confidence": "80%",
+    "explanation": "This likely refers to a diving-related service or equipment store, but could also be an app or online service.",
+    "confirm": false
+  },
+  "mytrip_1009027595": {
+    "category": "Travel",
+    "confidence": "80%",
+    "explanation": "\"mytrip\" implies a travel booking service, though the number attached makes it less certain.",
+    "confirm": false
+  },
+  "\u05d0\u05d9\u05e0\u05d8\u05e8\u05e1\u05e4\u05d9\u05d9\u05e1-\u05d8\u05e8\u05e0\u05d6\u05d9\u05dc\u05d4 \u05e9\u05d9\u05e8\u05d5\u05ea\u05d9\u05dd": {
+    "category": "Online Services",
+    "confidence": "80%",
+    "explanation": "This translates to \"Interspace-Tranzila Services,\" likely referring to online payment or hosting services.",
+    "confirm": false
+  },
+  "\u05d0\u05dc\u05d1\u05e8\u05d8\u05d5 \u05db\u05e4\u05e8\u05d9\u05d4 \u05e9\u05dc\u05d9": {
+    "category": "Dining Out",
+    "confidence": "80%",
+    "explanation": "\"Alberto Kafria Sheli\" sounds like a restaurant name, possibly an Italian or rural-themed eatery.",
+    "confirm": false
+  },
+  "\u05d1\u05d9 \u05d0\u05d2?\u05e0\u05d8 \u05d0\u05d5\u05e0\u05dc\u05d9\u05d9\u05df \u05d1\u05e2?\u05de": {
+    "category": "Online Services",
+    "confidence": "80%",
+    "explanation": "The business name \"\u05d1\u05d9 \u05d0\u05d2?\u05e0\u05d8 \u05d0\u05d5\u05e0\u05dc\u05d9\u05d9\u05df \u05d1\u05e2?\u05de\" translates from Hebrew to \"B Agent Online Ltd.\" The inclusion of \"online\" in the name strongly suggests this is a business providing some type of online service or acting as an online agent/intermediary. However, without more specifics about what services they offer, I can't be 100% certain of the categorization.",
+    "confirm": false
+  },
+  "\u05d3\u05d5\u05e8 \u05d0\u05dc\u05d5\u05df - \u05d8\u05dc \u05e9\u05d7\u05e8": {
+    "category": "Transportation",
+    "confidence": "80%",
+    "explanation": "Dor Alon is a known Israeli gas station chain, likely for vehicle refueling.",
+    "confirm": false
+  },
+  "\u05d3\u05dc\u05e7 \u05de\u05e0\u05d8\u05d4 \u05d9\u05d3 \u05d1\u05e0\u05d9\u05de\u05d9\u05df": {
+    "category": "Transportation",
+    "confidence": "80%",
+    "explanation": "This appears to be a gas station (Delek) with a convenience store (Menta), primarily used for fueling vehicles.",
+    "confirm": false
+  },
+  "\u05d3\u05e4\u05d5\u05e1 \u05de\u05dc\u05d0\u05db\u05d9 \u05d1\u05e2\"\u05de": {
+    "category": "Business Expenses",
+    "confidence": "80%",
+    "explanation": "\"\u05d3\u05e4\u05d5\u05e1\" suggests printing services, likely used for business purposes.",
+    "confirm": false
+  },
+  "\u05d3\u05e8\u05d0\u05de\u05e8 \u05d4\u05de\u05e8\u05db\u05d6 \u05dc\u05de\u05d5\u05e1\u05d9\u05e7\u05d4 \u05d1\u05e2\"\u05de-\u05e6\u05de\u05e8\u05ea": {
+    "category": "Entertainment",
+    "confidence": "80%",
+    "explanation": "The Hebrew name includes \"music center,\" suggesting it's related to music education or instruments, falling under entertainment.",
+    "confirm": false
+  },
+  "\u05d4\u05db\u05dc \u05d0\u05d1\u05dc \u05d4\u05db\u05dc \u05d110": {
+    "category": "Shopping",
+    "confidence": "80%",
+    "explanation": "This Hebrew phrase translates to \"Everything but everything for 10,\" suggesting a discount store.",
+    "confirm": false
+  },
+  "\u05d8\u05d5\u05e0\u05d9 \u05d5\u05d5\u05e1\u05e4\u05d4 \u05d2\u05d1\u05e2\u05ea\u05d9\u05d9\u05dd": {
+    "category": "Transportation",
+    "confidence": "80%",
+    "explanation": "\"\u05d5\u05d5\u05e1\u05e4\u05d4\" likely refers to Vespa scooters, suggesting a vehicle-related business.",
+    "confirm": false
+  },
+  "\u05d9.\u05e0.\u05de\u05e8\u05e7\u05d8\u05dc\u05d9\u05e0\u05e7 \u05d1\u05e2\"\u05de": {
+    "category": "Groceries",
+    "confidence": "80%",
+    "explanation": "The Hebrew name includes \"market,\" suggesting it's likely a grocery or market-related business.",
+    "confirm": false
+  },
+  "\u05d9\u05d5\u05e4\u05d9\u05d9 \u05d2\u05dc\u05e4\u05d9\u05df \u05d0\u05d7\u05d6\u05e7\u05d5\u05ea \u05d1\u05e2\"\u05de": {
+    "category": "Business Expenses",
+    "confidence": "80%",
+    "explanation": "\u05d9\u05d5\u05e4\u05d9\u05d9 \u05d2\u05dc\u05e4\u05d9\u05df \u05d0\u05d7\u05d6\u05e7\u05d5\u05ea \u05d1\u05e2\"\u05de translates to \"Yofi Gelfin Holdings Ltd.\" in English. The \"Ltd.\" (\u05d1\u05e2\"\u05de) indicates this is a limited company, which is a type of business entity. While the exact nature of the business is not specified, the name suggests it is likely a holding company that owns and manages other businesses or investments. Therefore, the most fitting category is Business Expenses.",
+    "confirm": false
+  },
+  "\u05de\u05e0\u05d8\u05e0\u05d8\u05df": {
+    "category": "Dining Out",
+    "confidence": "80%",
+    "explanation": "This appears to be a Hebrew name, likely for a restaurant. \"\u05de\u05e0\u05d8\u05e0\u05d8\u05df\" could be transliterated as \"Manhattan,\" suggesting a New York-style eatery.",
+    "confirm": false
+  },
+  "\u05e1\u05d0\u05e7\u05d5\u05e0\u05d9- \u05d7\u05e0\u05d5\u05ea \u05d1\u05d9\u05dc\"\u05d5-\u05e6\u05de\u05e8\u05ea": {
+    "category": "Shopping",
+    "confidence": "80%",
+    "explanation": "\"\u05e1\u05d0\u05e7\u05d5\u05e0\u05d9- \u05d7\u05e0\u05d5\u05ea \u05d1\u05d9\u05dc\"\u05d5-\u05e6\u05de\u05e8\u05ea\" appears to be a Hebrew name, likely referring to a Saucony store (\u05e1\u05d0\u05e7\u05d5\u05e0\u05d9 is the Hebrew transliteration of Saucony, a popular athletic footwear brand). The word \"\u05d7\u05e0\u05d5\u05ea\" means \"store\" in Hebrew. While I'm not entirely certain about the full context, this seems to be a retail store selling athletic shoes or apparel, which falls under the Shopping category. The confidence is not 100% due to the language barrier and potential for misinterpretation of the specific type of store.",
+    "confirm": false
+  },
+  "\u05e2\u05dc\u05de\u05d0 \u05de\u05e8\u05e7\u05d9\u05d4": {
+    "category": "Groceries",
+    "confidence": "80%",
+    "explanation": "\"\u05de\u05e8\u05e7\u05d9\u05d4\" is similar to \"market\" in Hebrew, likely indicating a grocery or food market.",
+    "confirm": false
+  },
+  "\u05e7\u05dc\u05d9\u05df \u05d0\u05e0\u05d3 \u05e4\u05d0\u05e8\u05e7": {
+    "category": "Transportation",
+    "confidence": "80%",
+    "explanation": "\"Clean and Park\" suggests a car washing and parking service, which falls under transportation.",
+    "confirm": false
+  },
+  "EXPHARINAS": {
+    "category": "Healthcare",
+    "confidence": "75%",
+    "explanation": "The name suggests it might be related to pharmaceuticals or a pharmacy, but it's not entirely clear.",
+    "confirm": false
+  },
+  "Iryo": {
+    "category": "Transportation",
+    "confidence": "75%",
+    "explanation": "Iryo is a Spanish high-speed rail service, falling under transportation, but the confidence is lower due to potential ambiguity without context.",
+    "confirm": false
+  },
+  "MARKET IN KALAMPAKA M4": {
+    "category": "Groceries",
+    "confidence": "75%",
+    "explanation": "\"Market\" in the name suggests a store, likely for groceries or general goods.",
+    "confirm": false
+  },
+  "MILK AWAY": {
+    "category": "Groceries",
+    "confidence": "75%",
+    "explanation": "The name suggests a dairy-related business, likely a grocery or convenience store specializing in milk products.",
+    "confirm": false
+  },
+  "OMNY VENDING*": {
+    "category": "Other",
+    "confidence": "75%",
+    "explanation": "This appears to be related to vending machines, but it's not clear if it's for food, services, or other products.",
+    "confirm": false
+  },
+  "PAN LAUDE SL": {
+    "category": "Dining Out",
+    "confidence": "75%",
+    "explanation": "\"Pan\" means bread in Spanish, suggesting this might be a bakery or bread-related business.",
+    "confirm": false
+  },
+  "SELINA OPERAT THEA M A": {
+    "category": "Travel",
+    "confidence": "75%",
+    "explanation": "Selina is a chain of hostels and co-working spaces, suggesting this is likely a lodging expense during travel.",
+    "confirm": false
+  },
+  "\u05d1\u05d8\u05d7\u05d5\u05df \u05e4\u05e0\u05d9\u05dd - \u05db\u05dc\u05d9 \u05d9\u05e8\u05d9\u05d9\u05d4": {
+    "category": "Other",
+    "confidence": "75%",
+    "explanation": "This translates to \"Internal Security - Firearms,\" possibly related to government services or specialized retail, but exact category is unclear.",
+    "confirm": false
+  },
+  "\u05d1\u05e1\u05d8 \u05e1\u05d9\u05d9\u05dc \u05e1\u05dc\u05d5\u05dc\u05e8-\u05de\u05d9\u05de\u05d5\u05e0\u05d9\u05ea": {
+    "category": "Shopping",
+    "confidence": "75%",
+    "explanation": "The business name \"\u05d1\u05e1\u05d8 \u05e1\u05d9\u05d9\u05dc \u05e1\u05dc\u05d5\u05dc\u05e8-\u05de\u05d9\u05de\u05d5\u05e0\u05d9\u05ea\" appears to be in Hebrew. While I'm not fluent in Hebrew, I can recognize that \"\u05e1\u05dc\u05d5\u05dc\u05e8\" (cellular) is likely referring to mobile phones or related services. \"\u05d1\u05e1\u05d8 \u05e1\u05d9\u05d9\u05dc\" sounds like \"Best Sale\" transliterated. This suggests it's a shop selling mobile phones or accessories, which would fall under the Shopping category. However, without full certainty of the translation and exact nature of the business, I've given a 75% confidence level. The business could potentially be categorized under Online Services if it's primarily a mobile service provider, but Shopping seems more likely given the \"sale\" aspect.",
+    "confirm": false
+  },
+  "\u05d1\u05e8 \u05d5\u05d8\u05d1\u05e2": {
+    "category": "Dining Out",
+    "confidence": "75%",
+    "explanation": "This translates to \"Bar and Nature,\" likely a bar or cafe with a natural theme.",
+    "confirm": false
+  },
+  "\u05d4\u05e9\u05de\u05df \u05d0\u05d9\u05dc\u05ea": {
+    "category": "Dining Out",
+    "confidence": "75%",
+    "explanation": "This Hebrew text translates to \"The Oil Eilat,\" which could be a restaurant or food-related business in Eilat, Israel.",
+    "confirm": false
+  },
+  "\u05d8\u05e8\u05de\u05d9\u05e0\u05dc \u05d8\u05d5\u05d5\u05d9\u05e0\u05d8\u05d9 \u05d5\u05d5\u05d0\u05df \u05d1\u05e2\"\u05de": {
+    "category": "Travel",
+    "confidence": "75%",
+    "explanation": "\"\u05d8\u05e8\u05de\u05d9\u05e0\u05dc\" means \"terminal\" in Hebrew, suggesting an airport or travel-related business.",
+    "confirm": false
+  },
+  "\u05d8\u05e8\u05e7 \u05de\u05e8\u05e7\u05d8 \u05d4\u05e8\u05d5\u05d3\u05e1": {
+    "category": "Shopping",
+    "confidence": "75%",
+    "explanation": "This appears to be a market or store, possibly specializing in trekking or outdoor gear, located in or near Herod's (possibly a mall or location in Israel).",
+    "confirm": false
+  },
+  "\u05dc\u05d0\u05e1\u05d8 \u05e4\u05e8\u05d9\u05d9\u05e1 \u05d1\u05e2\"\u05de": {
+    "category": "Shopping",
+    "confidence": "75%",
+    "explanation": "\"Last Price\" suggests a retail or discount store, but could be for various products.",
+    "confirm": false
+  },
+  "\u05e4\u05d0\u05e0\u05e1 \u05d1\u05de\u05d5\u05e9\u05d1\u05d4": {
+    "category": "Dining Out",
+    "confidence": "75%",
+    "explanation": "This could translate to \"Fans in the Colony,\" possibly referring to a restaurant or bar, but it's not entirely clear.",
+    "confirm": false
+  },
+  "\u05e6\u05de\u05d9\u05d2\u05d9 2000": {
+    "category": "Transportation",
+    "confidence": "75%",
+    "explanation": "The business name \"\u05e6\u05de\u05d9\u05d2\u05d9 2000\" appears to be in Hebrew, and \"\u05e6\u05de\u05d9\u05d2\u05d9\" translates to \"tires\" in English. This suggests it's likely a tire shop or service center, which falls under the Transportation category. However, without more context about the specific services offered, there's some uncertainty, hence the 75% confidence level. It could potentially be categorized under Auto Maintenance, which isn't a provided option, so Transportation is the closest fit.",
+    "confirm": false
+  },
+  "\u05e8\u05d9\u05d1\u05d0\u05e8 \u05d0\u05d9\u05d9\u05e1\u05de\u05d5\u05dc \u05d0\u05d9\u05dc\u05ea": {
+    "category": "Shopping",
+    "confidence": "75%",
+    "explanation": "This appears to be a mall (\"Ice Mall\") in Eilat, Israel, primarily a shopping destination.",
+    "confirm": false
+  },
+  "23 ROBADORS": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "This appears to be a restaurant or bar name, but without more context, it's hard to be certain.",
+    "confirm": false
+  },
+  "ATLANTIKOS": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "This name suggests a Greek or seafood restaurant, but without more context, it's not entirely certain.",
+    "confirm": false
+  },
+  "GERMANOS 10111 00001 A": {
+    "category": "Shopping",
+    "confidence": "70%",
+    "explanation": "Germanos is a chain of electronics and mobile phone stores in Greece, but the additional numbers make it less certain.",
+    "confirm": false
+  },
+  "GLYKOPOULOS PANAGI": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "This Greek name suggests it might be a bakery or confectionery, as \"Glyko\" relates to sweet things.",
+    "confirm": false
+  },
+  "GlobalE": {
+    "category": "Online Services",
+    "confidence": "70%",
+    "explanation": "The name \"GlobalE\" suggests a global or international focus, which is often associated with online services or e-commerce platforms. However, without more specific information about the business's activities, it's difficult to be certain. The \"E\" could stand for \"electronic\" or \"e-commerce,\" further supporting the online services category. The confidence is moderate due to the lack of detailed information about the company's specific operations.",
+    "confirm": false
+  },
+  "I-FAL \u05d0\u05e0\u05d2\u05dc\u05d9\u05ea DOLEAD /": {
+    "category": "Education",
+    "confidence": "70%",
+    "explanation": "The mention of English (\u05d0\u05e0\u05d2\u05dc\u05d9\u05ea) suggests this might be related to language learning or education services, but the exact nature is unclear.",
+    "confirm": false
+  },
+  "ICONIC ATIENS IOST": {
+    "category": "Travel",
+    "confidence": "70%",
+    "explanation": "\"Athens\" suggests it's related to travel, possibly a hotel or attraction in Athens.",
+    "confirm": false
+  },
+  "ISRAILITIKI_KOINOTITA_": {
+    "category": "Other",
+    "confidence": "70%",
+    "explanation": "This appears to be Greek for \"Israeli Community,\" but its exact nature (social, religious, or business) is unclear.",
+    "confirm": false
+  },
+  "KUHN'S MCKNIGHT": {
+    "category": "Groceries",
+    "confidence": "70%",
+    "explanation": "Kuhn's is often associated with grocery stores, but without more context, it's not entirely certain.",
+    "confirm": false
+  },
+  "LA FABRICA": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "\"La Fabrica\" (The Factory) is often used for restaurants or bars, especially those with an industrial theme.",
+    "confirm": false
+  },
+  "ONEFAN SANTS": {
+    "category": "Entertainment",
+    "confidence": "70%",
+    "explanation": "\"FAN\" suggests it might be related to sports or entertainment, but the purpose is not entirely clear.",
+    "confirm": false
+  },
+  "PAYPAL *INTERPUB": {
+    "category": "Online Services",
+    "confidence": "70%",
+    "explanation": "The PayPal prefix suggests an online transaction, but the nature of \"INTERPUB\" is not clear. It could be for publishing or other online services.",
+    "confirm": false
+  },
+  "PAYPAL *PATREONIREL M": {
+    "category": "Online Services",
+    "confidence": "70%",
+    "explanation": "PayPal indicates an online transaction, and Patreon (if that's what's referenced) is a platform for content creators, suggesting an online service.",
+    "confirm": false
+  },
+  "PAYPAL *iloralon55": {
+    "category": "Online Services",
+    "confidence": "70%",
+    "explanation": "PayPal is a widely used online payment service, which falls under the Online Services category. The asterisk and following text (\"iloralon55\") likely indicates a specific merchant or transaction through PayPal. Without more context about \"iloralon55\", it's difficult to be certain about the exact nature of the purchase, which is why the confidence is not higher. It could potentially be a payment for shopping, business expenses, or various other categories, but the primary classification is based on PayPal itself as the payment processor.",
+    "confirm": false
+  },
+  "SPIRIT48704079830290": {
+    "category": "Transportation",
+    "confidence": "70%",
+    "explanation": "Spirit is likely referring to Spirit Airlines, but the number attached makes it less certain. It's probably related to air travel.",
+    "confirm": false
+  },
+  "TD365.com": {
+    "category": "Online Services",
+    "confidence": "70%",
+    "explanation": "TD365.com appears to be an online trading platform, likely offering financial services or trading capabilities. The \".com\" domain suggests it's an internet-based service. However, without more specific information about the nature of the business, I can't be entirely certain. It could potentially fall under \"Business Expenses\" or \"Savings & Investments\" depending on its exact purpose, which is why the confidence level is not higher.",
+    "confirm": false
+  },
+  "\u05d0\u05d5\u05e4\u05e7 \u05d4\u05e4\u05e6\u05d4 \u05d5\u05e9\u05d9\u05d5\u05d5\u05e7 \u05d1\u05e2\"\u05de": {
+    "category": "Business Expenses",
+    "confidence": "70%",
+    "explanation": "This Hebrew name translates to \"Ofek Distribution and Marketing Ltd.,\" suggesting a B2B service, but the exact nature is unclear.",
+    "confirm": false
+  },
+  "\u05d0\u05d9\u05dc\u05e0'\u05e1 \u05e7\u05e4\u05dc\u05df": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "The Hebrew name suggests a restaurant or cafe, likely a dining establishment.",
+    "confirm": false
+  },
+  "\u05d1\u05d5\u05e0\u05d6'\u05d5\u05e8": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "\"\u05d1\u05d5\u05e0\u05d6'\u05d5\u05e8\" (Bonjour) is a French greeting, often used for cafes or bakeries, suggesting a dining establishment.",
+    "confirm": false
+  },
+  "\u05d1\u05e1\u05e8 \u05e1\u05d9\u05d8\u05d9- \u05e1\u05e0\u05d8\u05e8\u05dc \u05e4\u05d0\u05e8\u05e7 \u05d1\u05e2\"\u05de": {
+    "category": "Other",
+    "confidence": "70%",
+    "explanation": "This translates to \"Besser City - Central Park Ltd.,\" possibly a real estate or property management company, but it's not entirely clear.",
+    "confirm": false
+  },
+  "\u05d2\u05d0\u05e1\u05d8 \u05de\u05d9\u05d8": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "This Hebrew text could be transliterated as \"Guest Meet\" or \"Gast Mit,\" which might suggest a restaurant or dining establishment, but the context is not entirely clear.",
+    "confirm": false
+  },
+  "\u05d4\u05de\u05dc\u05d1\u05d9\u05d4 \u05d2\u05d1\u05e2\u05ea\u05d9\u05d9\u05dd": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "\"\u05d4\u05de\u05dc\u05d1\u05d9\u05d4\" (Hamalabiya) suggests a food establishment, likely specializing in malabi (a Middle Eastern dessert).",
+    "confirm": false
+  },
+  "\u05d4\u05e2\u05d1\u05e8\u05d4 \u05d1 BIT \u05d1\u05e0\u05d4\"\u05e4": {
+    "category": "Online Services",
+    "confidence": "70%",
+    "explanation": "\"BIT\" suggests a digital transaction service, but the Hebrew text makes it less certain.",
+    "confirm": false
+  },
+  "\u05d8\u05d5\u05e0\u05d9 \u05d5\u05d5\u05e1\u05e4\u05d4": {
+    "category": "Transportation",
+    "confidence": "70%",
+    "explanation": "\"\u05d5\u05d5\u05e1\u05e4\u05d4\" is likely \"Vespa\" in Hebrew, suggesting a scooter-related business, possibly sales or rental.",
+    "confirm": false
+  },
+  "\u05d9\u05e2\u05d3 \u05d7\u05d1\u05e8\u05d4 \u05dc\u05e4\u05d9\u05ea\u05d5\u05d7 \u05d2\u05d1\u05e2\u05ea\u05d9\u05d9\u05dd \u05d1\u05e2\"\u05de": {
+    "category": "Other",
+    "confidence": "70%",
+    "explanation": "This appears to be a development company for Givatayim (an Israeli city), but its exact nature is unclear. It could be involved in various sectors.",
+    "confirm": false
+  },
+  "\u05d9\u05e2\u05e0\u05e7\u05dc'\u05e1": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "Sounds like a restaurant name, but without more context, it's not entirely certain.",
+    "confirm": false
+  },
+  "\u05de\u05e4\u05d2\u05e9 6": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "\"Mifgash 6\" sounds like a restaurant or caf\u00e9 name, but without more context, it's not entirely certain.",
+    "confirm": false
+  },
+  "\u05e0\u05d1\u05d9\u05e2\u05d4": {
+    "category": "Groceries",
+    "confidence": "70%",
+    "explanation": "This translates to \"spring\" or \"source\" in Hebrew, possibly referring to a water or beverage company.",
+    "confirm": false
+  },
+  "\u05e1\u05e7\u05d0\u05e8\u05d4 -\u05d1\u05d9\u05dc\u05d5": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "This appears to be a restaurant name in Hebrew, but without more context, it's not entirely certain.",
+    "confirm": false
+  },
+  "\u05e2\u05d5\u05d6\u05d9 \u05d0\u05dc\u05d9 \u05d0\u05d9\u05e9 \u05d4\u05d0\u05ea\u05e8\u05d5\u05d2\u05d9\u05dd": {
+    "category": "Shopping",
+    "confidence": "70%",
+    "explanation": "The name suggests a specialty fruit (etrog) seller, likely a shopping experience rather than regular groceries.",
+    "confirm": false
+  },
+  "\u05e4\u05d5\u05e0\u05d2\u05d9": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "This could be a restaurant name, possibly related to \"fungi\" or mushrooms.",
+    "confirm": false
+  },
+  "\u05e4\u05d9\u05d5\u05e8\u05d9 \u05d9\u05e8\u05d5\u05e9\u05dc\u05d9\u05dd": {
+    "category": "Dining Out",
+    "confidence": "70%",
+    "explanation": "This translates to \"Fiori Jerusalem,\" likely an Italian restaurant in Jerusalem, but without more context, it's not entirely certain.",
+    "confirm": false
+  },
+  "\u05e6\u05dc\u05d9\u05dc\u05d4 \u05d7\u05d5\u05e4\u05e9\u05d9\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc": {
+    "category": "Entertainment",
+    "confidence": "70%",
+    "explanation": "\"\u05e6\u05dc\u05d9\u05dc\u05d4 \u05d7\u05d5\u05e4\u05e9\u05d9\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc\" translates to \"Free Diving Israel\" in English. Free diving is a form of underwater diving that relies on breath-holding rather than using breathing apparatus. This suggests it's likely a business offering free diving experiences, lessons, or equipment, which would fall under the Entertainment category. However, the confidence is not 100% as it could potentially be categorized under Travel or Education depending on its specific services. Without more context about the business operations, there's some uncertainty in the categorization.",
+    "confirm": false
+  },
+  "\u05e7\u05d9\u05d9.\u05d0\u05e1 .\u05e4\u05d9 \u05de\u05d7\u05e9\u05d1\u05d9\u05dd-\u05d2\u05de\u05d0": {
+    "category": "Shopping",
+    "confidence": "70%",
+    "explanation": "The Hebrew name includes \"computers,\" suggesting it's likely a computer store or service, falling under shopping.",
+    "confirm": false
+  },
+  "\u05e7\u05de\u05d0\u05e0\u05d2'\u05d4 \u05de\u05d1\u05d9\u05ea \u05de\u05d9\u05d5\u05d6\u05d9\u05e7\u05d0\u05dc\u05d9": {
+    "category": "Entertainment",
+    "confidence": "70%",
+    "explanation": "The Hebrew name includes \"musical,\" suggesting it's related to music or instruments, which falls under entertainment.",
+    "confirm": false
+  },
+  "\u05d1\u05d9\u05d2 \u05d8\u05d9\u05d9\u05dd": {
+    "category": "Entertainment",
+    "confidence": "65%",
+    "explanation": "\"Big Time\" could refer to an entertainment venue or arcade, but it's not entirely clear without more information.",
+    "confirm": false
+  },
+  "\u05d9\u05d4\u05d5\u05e0\u05ea\u05df \u05d1\u05d9\u05e1\u05d8\u05e8\u05d9\u05e6\u05e8(\u05e7\u05d8\u05e8\u05d9\u05e0\u05d4)": {
+    "category": "Dining Out",
+    "confidence": "65%",
+    "explanation": "The name includes what appears to be \"catering\" in parentheses, suggesting it's related to food services, but the confidence is lower due to potential alternative interpretations.",
+    "confirm": false
+  },
+  "CARDLINK ONE*ATTIKA": {
+    "category": "Other",
+    "confidence": "60%",
+    "explanation": "This could be a financial service or payment system, but without more context, it's difficult to categorize definitively.",
+    "confirm": false
+  },
+  "EL SIRIO": {
+    "category": "Dining Out",
+    "confidence": "60%",
+    "explanation": "The name suggests it might be a Syrian restaurant, but without more context, this is somewhat speculative.",
+    "confirm": false
+  },
+  "PAYPAL *SUPER TEMPAUT": {
+    "category": "Online Services",
+    "confidence": "60%",
+    "explanation": "PayPal indicates an online transaction, but the purpose is unclear. It could be for various online services or products.",
+    "confirm": false
+  },
+  "PREVENTIS TALACHOUPI": {
+    "category": "Healthcare",
+    "confidence": "60%",
+    "explanation": "\"Preventis\" suggests a preventive health service, but without more context, this categorization is not certain.",
+    "confirm": false
+  },
+  "ROUGA": {
+    "category": "Shopping",
+    "confidence": "60%",
+    "explanation": "Without more context, this could be a brand name. The category is uncertain, but it's likely a retail store.",
+    "confirm": false
+  },
+  "SSTY ATHENS STRIPE": {
+    "category": "Online Services",
+    "confidence": "60%",
+    "explanation": "The mention of \"Stripe\" suggests this might be related to online payment processing, but the context is unclear.",
+    "confirm": false
+  },
+  "SumUp *Espai Begge": {
+    "category": "Other",
+    "confidence": "60%",
+    "explanation": "SumUp is a payment processor, while \"Espai Begge\" could be a shop or service. Without more context, it's difficult to categorize definitively.",
+    "confirm": false
+  },
+  "TECHNE HYDRA": {
+    "category": "Other",
+    "confidence": "60%",
+    "explanation": "The name doesn't clearly indicate the business type. It could be related to technology or water systems, but it's unclear without more context.",
+    "confirm": false
+  },
+  "TECHNOELIT A.E.": {
+    "category": "Other",
+    "confidence": "60%",
+    "explanation": "The name doesn't provide clear information about the business type. It could be a technology company, but without more context, it's difficult to categorize definitively.",
+    "confirm": false
+  },
+  "VICKO TSIMISKI": {
+    "category": "Shopping",
+    "confidence": "60%",
+    "explanation": "This appears to be a Greek business name, possibly a retail store, but without more context, it's difficult to be certain.",
+    "confirm": false
+  },
+  "VIVARI CORCEGA": {
+    "category": "Dining Out",
+    "confidence": "60%",
+    "explanation": "\"Vivari\" might suggest a place for food or drink, and Corcega (Corsica) could indicate a regional cuisine, but this is speculative.",
+    "confirm": false
+  },
+  "\u05d0\u05d5\u05d8\u05dc\u05d5": {
+    "category": "Dining Out",
+    "confidence": "60%",
+    "explanation": "\"Otello\" could refer to the Shakespeare play or an entertainment venue, but without more context, it's difficult to be certain.",
+    "confirm": false
+  },
+  "\u05d3\u05d5\u05d1\u05d3\u05d1\u05df": {
+    "category": "Shopping",
+    "confidence": "60%",
+    "explanation": "This Hebrew word means \"cherry,\" which could be a fruit store or a brand name. Without more context, it's difficult to categorize definitively.",
+    "confirm": false
+  },
+  "\u05d3\u05d5\u05d1\u05d9\u05dc\u05d4": {
+    "category": "Dining Out",
+    "confidence": "60%",
+    "explanation": "\"Dubila\" doesn't provide much context, but it sounds like a restaurant name. Lower confidence due to lack of clear information.",
+    "confirm": false
+  },
+  "\u05d7\u05d9\u05d9\u05dc \u05de\u05e6\u05d8\u05d9\u05d9\u05df \u05d1\u05e2\"\u05de": {
+    "category": "Dining Out",
+    "confidence": "60%",
+    "explanation": "\"Chayal Mitztayen Ltd.\" translates to \"Outstanding Soldier Ltd.,\" but it's unclear what type of business this is. It could be related to military supplies or services.",
+    "confirm": false
+  },
+  "\u05d7\u05d9\u05d9\u05dc \u05de\u05e6\u05d8\u05d9\u05d9\u05df \u05d1\u05e2\u05de": {
+    "category": "Other",
+    "confidence": "60%",
+    "explanation": "This translates to \"Outstanding Soldier Ltd.,\" but it's unclear what type of business this is without more context.",
+    "confirm": false
+  },
+  "\u05e7\u05d4\u05d9\u05dc\u05ea \u05de\u05e2\u05dc\u05d5\u05ea \u05d7\u05d1\u05e8\u05d5\u05df \u05e7\u05e8\u05d9\u05ea \u05d0\u05e8": {
+    "category": "Other",
+    "confidence": "60%",
+    "explanation": "This translates to a community name, possibly related to donations or community services, but the exact nature is unclear.",
+    "confirm": false
+  },
+  "AFOI BAIRAKTARI AE": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "The nature of this business is unclear without more context. It appears to be a Greek company name but its specific category can't be determined.",
+    "confirm": false
+  },
+  "ATHER": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "Without more context, it's unclear what this business does. It could be a brand name for various types of products or services.",
+    "confirm": false
+  },
+  "CORDOVA FORUM": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "\"Forum\" suggests a meeting place or discussion platform, but without more context, it's difficult to categorize definitively.",
+    "confirm": false
+  },
+  "FOTIOS KOUVAS": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "This appears to be a personal name, but the nature of the business is unclear without additional context.",
+    "confirm": false
+  },
+  "GRANDE": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "Without more context, this could refer to various types of businesses. It might be a caf\u00e9, restaurant, or retail store.",
+    "confirm": false
+  },
+  "GUICHOC 7": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "The purpose of this business is unclear. It could be a shop or service, but there's not enough information to categorize confidently.",
+    "confirm": false
+  },
+  "Georgios Papavlasopoul": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "This appears to be a Greek personal name, making it difficult to categorize without more context.",
+    "confirm": false
+  },
+  "IDANIKO": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "The name doesn't provide clear information about the business type. It could be a brand name or store, but it's unclear without more context.",
+    "confirm": false
+  },
+  "K KONTARGYRIS KAI S": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "Without additional context, it's unclear what type of business this is. It could be a local shop or service provider.",
+    "confirm": false
+  },
+  "ONEFAM PARALELO": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "The purpose of this business is not clear from the name alone.",
+    "confirm": false
+  },
+  "PAPOULIA CHARIKLEI": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "This appears to be a personal or business name, but the nature of the business is not clear from the name alone.",
+    "confirm": false
+  },
+  "PAYPAL *SUPER": {
+    "category": "Online Services",
+    "confidence": "50%",
+    "explanation": "While PayPal indicates an online transaction, the purpose is vague, making it difficult to categorize more specifically.",
+    "confirm": false
+  },
+  "RAUMONDIS EMMANOUIL V": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "The name doesn't provide clear information about the business type. It could be a personal business or service, but it's uncertain.",
+    "confirm": false
+  },
+  "THEOCHARIS GEORGIO": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "This appears to be a person's name, making it unclear what type of business it represents without more context.",
+    "confirm": false
+  },
+  "\u05d0\u05d9\u05d9.\u05d8\u05d9.\u05d0\u05d9\u05d9 33 \u05d1\u05e2\"\u05de": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "This appears to be a company name (ITI 33 Ltd.), but its business type is unclear from the name alone.",
+    "confirm": false
+  },
+  "\u05d8\u05e8\"\u05de \u05d0\u05e9\u05d3\u05d5\u05d3": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "This is in Hebrew and appears to be an abbreviation. Without more context, it's difficult to categorize accurately.",
+    "confirm": false
+  },
+  "\u05e2\u05d5\u05de\u05e8\u05e1": {
+    "category": "Other",
+    "confidence": "50%",
+    "explanation": "This Hebrew name doesn't provide enough context to determine the type of business.",
+    "confirm": false
+  },
+  "ANAGNOSTOPOULOU KO": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The name doesn't provide clear context about the business type. It could be a personal or family business in various sectors.",
+    "confirm": false
+  },
+  "BOZIKI MARIA": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This appears to be a personal name, making it unclear what type of business or service it represents.",
+    "confirm": false
+  },
+  "EGNATIA": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "Without more context, it's difficult to categorize. Egnatia could refer to various things, including a historical road or a business name.",
+    "confirm": false
+  },
+  "EXPSBERNA3": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The purpose of this business is unclear from the name alone. It could be an abbreviation or code for various types of services.",
+    "confirm": false
+  },
+  "FULL CIRCLE": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The name is too vague to determine the business type confidently. It could be related to various industries.",
+    "confirm": false
+  },
+  "HBB": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "These initials don't provide enough information to categorize the business confidently.",
+    "confirm": false
+  },
+  "KITSOGLOU I PARASKEV": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The nature of this business is unclear from the name alone. It could be a local shop or service, but without more context, it's difficult to categorize confidently.",
+    "confirm": false
+  },
+  "LIOUBOS ALEXANDROS": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This appears to be a personal name, making it difficult to determine the exact nature of the business.",
+    "confirm": false
+  },
+  "MAILOS": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The purpose of this business is unclear from the name alone, requiring more context for accurate categorization.",
+    "confirm": false
+  },
+  "MOLLAH MOSTAFIZOR": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This seems to be a personal name, and without more context, it's difficult to determine the business type.",
+    "confirm": false
+  },
+  "NADARAJAH NEIL": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This appears to be a person's name, making categorization difficult without more context.",
+    "confirm": false
+  },
+  "NIKOLAOS KROKIDIS": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This appears to be a personal name, making it difficult to determine the exact nature of the business.",
+    "confirm": false
+  },
+  "OSY-KOUMARIANOS EUSTAT": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The nature of this business is unclear from the name alone. It could be a personal name or a specialized business.",
+    "confirm": false
+  },
+  "PAGIATI AIKATERINI": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This seems to be a personal name, and without more context, it's unclear what type of business or service it represents.",
+    "confirm": false
+  },
+  "STATHATOS KONSTANT": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This appears to be a person's name. Without more context, it's difficult to categorize accurately.",
+    "confirm": false
+  },
+  "VEIO O E 2813": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The name doesn't provide clear information about the business type. It could be a code or specific location, but it's unclear without more context.",
+    "confirm": false
+  },
+  "VLACHOS NIKOLAOS": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This appears to be a personal name, making it difficult to determine the exact business type. It could be a variety of services or products.",
+    "confirm": false
+  },
+  "\u05d0\u05d1\u05d0 \u05ea\u05d5\u05d3\u05d4": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "This Hebrew phrase means \"Thanks Dad,\" which doesn't clearly indicate a business type. It could be a gift shop or various other businesses.",
+    "confirm": false
+  },
+  "\u05d3\u05d5\u05d5\u05d9\u05e0\u05d9": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The nature of this business is not clear from the name alone, making it difficult to categorize confidently.",
+    "confirm": false
+  },
+  "\u05d7\u05de\u05de\u05d4": {
+    "category": "Other",
+    "confidence": "40%",
+    "explanation": "The Hebrew word means \"greenhouse,\" but without more context, it's unclear if this is literal or figurative, making categorization difficult.",
+    "confirm": false
+  },
+  "CHEN BIN": {
+    "category": "Other",
+    "confidence": "30%",
+    "explanation": "The name doesn't provide clear context about the nature of the business, making categorization difficult.",
+    "confirm": false
+  },
+  "EVAG RAMNALHS EDI SIRA": {
+    "category": "Other",
+    "confidence": "30%",
+    "explanation": "The purpose of this business is unclear from the name alone. It could be an acronym or a name in a non-English language.",
+    "confirm": false
+  },
+  "KASKANI ATHINA": {
+    "category": "Other",
+    "confidence": "30%",
+    "explanation": "The name doesn't provide enough context to determine the business type. It could be a personal business in various sectors.",
+    "confirm": false
+  },
+  "KRETSIS FOTIOS 1667": {
+    "category": "Other",
+    "confidence": "30%",
+    "explanation": "The name doesn't provide enough context to determine the business type. It could be a personal business in various sectors.",
+    "confirm": false
+  },
+  "LICENCIA 06337": {
+    "category": "Other",
+    "confidence": "30%",
+    "explanation": "\"Licencia\" suggests a license or permit, but the specific type or purpose is unclear, making it difficult to categorize confidently.",
+    "confirm": false
+  },
+  "PANAGIOTOPOULOU KALLI": {
+    "category": "Other",
+    "confidence": "30%",
+    "explanation": "This appears to be a person's name, making it difficult to categorize without more context about the nature of the transaction.",
+    "confirm": false
+  },
+  "SACHINIS CHRISTOFOROS": {
+    "category": "Other",
+    "confidence": "30%",
+    "explanation": "The name doesn't provide enough context to determine the business type. It appears to be a personal or family business.",
+    "confirm": false
+  },
+  "T AGRAFA": {
+    "category": "Other",
+    "confidence": "30%",
+    "explanation": "The name doesn't provide enough context to confidently categorize this business.",
+    "confirm": false
+  },
+  "ZACHARAKI DESPOINA": {
+    "category": "Other",
+    "confidence": "100%",
+    "explanation": "This appears to be a person's name, making it difficult to categorize without more context about the nature of the transaction.",
+    "confirm": true
+  }
+}
