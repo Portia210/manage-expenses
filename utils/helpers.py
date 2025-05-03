@@ -1,4 +1,5 @@
 import pandas as pd
+from .excel_utils import DataFrameWriter
 
 
 # sum the רווח in משכורת, מס הכנסה, מעמ, ביטוח לאומי, רואה חשבון all of them if exists
@@ -71,7 +72,7 @@ def group_bank_df(df: pd.DataFrame):
     )
 
 
-def write_dfs_to_sheet(writer, sheet_name, dfs_list, seperation_between_df=1):
+def write_dfs_to_sheet_v1(writer, sheet_name, dfs_list, seperation_between_df=1):
     """dfs list is a nested list, each nested list of df is a col in the df"""
     start_col_index = 0
     for col_index, col_dfs_list in enumerate(dfs_list):
@@ -98,3 +99,16 @@ def write_dfs_to_sheet(writer, sheet_name, dfs_list, seperation_between_df=1):
                 startrow=start_row_index,
                 startcol=start_col_index,
             )
+
+def write_dfs_to_sheet(writer, sheet_name, dfs_list, seperation_between_df=1):
+    """Write multiple DataFrames to an Excel sheet with formatting.
+    
+    Args:
+        writer: pandas ExcelWriter object
+        sheet_name: name of the sheet to write to
+        dfs_list: nested list of DataFrames, each inner list represents a column
+        seperation_between_df: number of rows/columns to separate DataFrames
+    """
+    df_writer = DataFrameWriter(writer)
+    df_writer.write_dataframe_list(sheet_name, dfs_list, seperation_between_df)
+

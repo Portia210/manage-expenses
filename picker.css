@@ -1,0 +1,18 @@
+:root {
+    /* Primary Colors */
+    --primary-blue: #0070e0;      /* Deep blue for headers */
+    --primary-gray: #95A5A6;      /* Professional gray for text */
+    --primary-green: #27AE60;     /* Success green */
+    --primary-red: #E74C3C;       /* Error/warning red */
+    
+    /* Accent Colors */
+    --accent-yellow: #F1C40F;     /* Highlight yellow */
+    --accent-purple: #9B59B6;     /* Secondary accent */
+    --accent-orange: #E67E22;     /* Call-to-action orange */
+    
+    /* Background Colors */
+    --bg-light: #ECF0F1;         /* Light background */
+    --bg-dark: #34495E;          /* Dark background */
+    --bg-alt: #BDC3C7;           /* Alternative background */
+}
+

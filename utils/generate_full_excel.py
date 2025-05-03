@@ -70,7 +70,7 @@ def generate_full_excel(df: pd.DataFrame):
             )
 
             write_dfs_to_sheet(
-                writer, year, [[year_df], [group_bank_df(year_df)], [year_summary_df]]
+                writer, year, [[year_df, group_bank_df(year_df)], [year_summary_df]]
             )
 
         for month, month_df in months_dfs:
@@ -81,7 +81,7 @@ def generate_full_excel(df: pd.DataFrame):
             write_dfs_to_sheet(
                 writer,
                 month,
-                [[month_df], [group_bank_df(month_df)], [month_summary_df]],
+                [[month_df, group_bank_df(month_df)], [month_summary_df]],
             )
 
     print("excel file created successfully")
