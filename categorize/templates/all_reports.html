@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Reports</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .report-item {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            padding-top: 80px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h1>All Reports</h1>
+        <div class="d-flex flex-wrap justify-content-center">
+            {% for report_file in report_files %}
+            <a href="{{ url_for('report', folder_name=report_file) }}" class="report-item">{{ report_file }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

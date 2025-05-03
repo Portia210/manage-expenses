@@ -1,8 +1,8 @@
 # In a file named expense_categorizer.py
 
-import requests
-import json
 import configparser
+import json
+import requests
 
 # Read configuration from INI file
 config = configparser.ConfigParser()
@@ -14,9 +14,9 @@ API_KEY = config['DEFAULT']['ApiKey']
 EXPENSE_CATEGORIES = [
     "Shopping", "Groceries", "Utilities", "Transportation", "Travel",
     "Dining Out", "Online Services", "Healthcare", "Education", "Entertainment",
-    "Home Maintenance", "Personal Care", "Gifts & Donations", "Insurance",
-    "Taxes", "Debt Payments", "Savings & Investments", "Business Expenses",
-    "Pet Care", "Other"
+    "Home Maintenance", "Gifts & Donations", "Insurance",
+    "Taxes", "Savings & Investments", "Business Expenses",
+    "Other"
 ]
 
 TRANSACTION_KIND_FILE = 'transaction_kind.json'
@@ -92,7 +92,7 @@ def get_category_from_ai(businesses):
         "max_tokens": 2000
     }
 
-    response = requests.post(API_URL, headers=headers, json=data, timeout=10000)
+    response = requests.post(API_URL, headers=headers, json=data, timeout=6000)
 
     if response.status_code == 200:
         ai_response = response.json()['content'][0]['text']
